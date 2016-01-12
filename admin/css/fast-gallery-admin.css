@@ -1,0 +1,81 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+/**
+ * Fast Gallery config
+ *
+ */
+.fast-gallery-container {
+    margin: 0 -15px;
+    padding:0;
+}
+.fast-gallery-container:after, .fast-gallery-container:before { display: table; content: '';}
+.fast-gallery-container:after { clear: both;}
+
+.fast-gallery-container li {
+    display:block;
+    width: 30.56883%;
+    padding:0 15px;
+    height: 235px;
+    float:  left;
+    margin-bottom: 30px;
+}
+.fast-gallery-container li:hover .actions button {
+    transform: translateY(0);
+}
+.fast-gallery-container li .fast-gallery-image-container {
+    display: block;
+    height: 100%;
+    background-size: cover !important;
+    border: 1px solid #848484;
+}
+
+/* Buttons */
+.actions {
+    overflow: hidden;
+    margin-top: -29px;
+}
+.actions button {
+    width: 50%;
+    float: left;
+    background: rgba(51, 51, 51, 0.79);
+    border: 0;
+    height: 29px;
+    color: #FFF;
+    cursor: pointer;
+
+    transform: translateY(29px);
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.actions button:hover {
+    background: #000;
+}
+
+/* Add New Item */
+.fast-gallery-container li .fast-gallery_add_image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    border: 1px solid #CCC;
+    color: #0073AA;
+    cursor: pointer;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.fast-gallery-container li .fast-gallery_add_image span:before {
+    font-size: 79px;
+    width: auto;
+    height: auto;
+}
+.fast-gallery-container li .fast-gallery_add_image:hover { background: #0073AA; }
+.fast-gallery-container li .fast-gallery_add_image:hover span:before { color: #FFF; }
