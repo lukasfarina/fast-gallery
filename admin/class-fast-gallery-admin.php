@@ -123,12 +123,17 @@ class Fast_Gallery_Admin {
 	 * @since	1.0.0
 	 */
 	public function add_meta_boxes() {
-		add_meta_box(
+		$types = array( 'post', 'page' );
+
+		foreach( $types as $type ) {
+			add_meta_box(
 				'gallery_metabox',
 				'Galeria',
 				array($this,'gallery_view'),
-				'page'
-		);
+				$type
+			);
+		}
+
 	}
 
 	/**
