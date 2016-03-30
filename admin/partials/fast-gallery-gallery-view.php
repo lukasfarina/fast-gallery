@@ -21,7 +21,7 @@ $gallery = !empty($gallery) ? $gallery : array();
     <li>
         <input type="hidden" name="gallery[]" class="fast-gallery-image-id" value="<?php echo $imageId; ?>"/> <!-- TODO: Adicionar thumbnail size do Fast Gallery -->
         <div class="fast-gallery-image-container"
-             style="background: url('<?php echo wp_get_attachment_image_src($imageId, 'fast-gallery-thumbnail')[0]; ?>') no-repeat;">
+             style="background: url('<?php $bg = wp_get_attachment_image_src($imageId, 'fast-gallery-thumbnail'); echo $bg[0]; ?>') no-repeat;">
         </div>
 
         <div class="actions">
